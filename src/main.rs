@@ -1,6 +1,6 @@
 use iced::{
     application, executor, theme,
-    widget::{container, text_input, Container},
+    widget::{text_input, Container},
     window::Level,
     Application, Background, BorderRadius, Color, Command, Element, Font, Length, Settings, Theme,
 };
@@ -52,7 +52,6 @@ impl Application for CommandBar {
         Container::new(field)
             .center_x()
             .center_y()
-            .style(iced::theme::Container::Custom(Box::new(ContainerStyles)))
             .height(Length::Fill)
             .width(Length::Fill)
             .into()
@@ -72,21 +71,6 @@ impl application::StyleSheet for ApplicationStyles {
         application::Appearance {
             background_color: Color::TRANSPARENT,
             text_color: Color::TRANSPARENT,
-        }
-    }
-}
-
-struct ContainerStyles;
-impl container::StyleSheet for ContainerStyles {
-    type Style = Theme;
-
-    fn appearance(&self, _style: &Self::Style) -> iced::widget::container::Appearance {
-        iced::widget::container::Appearance {
-            text_color: Some(Color::WHITE),
-            background: Some(Background::Color(Color::TRANSPARENT)),
-            border_radius: BorderRadius::from(10.0),
-            border_width: 0.0,
-            border_color: Color::TRANSPARENT,
         }
     }
 }
