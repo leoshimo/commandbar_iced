@@ -1,7 +1,7 @@
 use iced::{
     application, executor, theme,
     widget::{text_input, Container},
-    window::Level,
+    window::{Level, WindowButtons, PlatformSpecific},
     Application, Background, BorderRadius, Color, Command, Element, Font, Length, Settings, Theme,
 };
 
@@ -137,6 +137,17 @@ impl text_input::StyleSheet for SearchInputStyles {
 }
 
 fn main() -> iced::Result {
+
+    let platform_window_settings = if cfg!(target_os="macos") {
+        PlatformSpecific {
+            title_hidden: true,
+            titlebar_transparent: true,
+            fullsize_content_view: true,
+        }
+    } else {
+        Default::default()
+    };
+
     let window_settings = iced::window::Settings {
         size: (800, 50),
         position: Default::default(),
@@ -144,11 +155,12 @@ fn main() -> iced::Result {
         max_size: None,
         visible: true,
         resizable: false,
-        decorations: false,
+        decorations: true,
         transparent: true,
         level: Level::AlwaysOnTop,
         icon: None,
-        platform_specific: Default::default(),
+        enabled_buttons: WindowButtons::empty(),
+        platform_specific: platform_window_settings
     };
 
     CommandBar::run(Settings {

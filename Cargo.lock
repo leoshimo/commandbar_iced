@@ -528,9 +528,9 @@ dependencies = [
 
 [[package]]
 name = "flate2"
-version = "1.0.26"
+version = "1.0.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3b9429470923de8e8cbd4d2dc513535400b4b3fef0319fb5c4e1f520a7bef743"
+checksum = "c6c98ee8095e9d1dcbf2fcc6d95acccb90d1c81db1e44725c6a984b1dbdfb010"
 dependencies = [
  "crc32fast",
  "miniz_oxide",
@@ -832,8 +832,7 @@ checksum = "dfa686283ad6dd069f105e5ab091b04c62850d3e4cf5d67debad1933f55023df"
 [[package]]
 name = "iced"
 version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c708807ec86f99dd729dc4d42db5239acf118cec14d3c5f57679dcfdbbc472b1"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "iced_core",
  "iced_futures",
@@ -846,8 +845,7 @@ dependencies = [
 [[package]]
 name = "iced_core"
 version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "64d0bc4fbf018576d08d93f838e6058cc6f10bbc05e04ae249a2a44dffb4ebc8"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "bitflags 1.3.2",
  "instant",
@@ -860,8 +858,7 @@ dependencies = [
 [[package]]
 name = "iced_futures"
 version = "0.7.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "14dab0054a9c7a1cbce227a8cd9ee4a094497b3d06094551ac6c1488d563802e"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "futures",
  "iced_core",
@@ -873,8 +870,7 @@ dependencies = [
 [[package]]
 name = "iced_graphics"
 version = "0.9.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "67ff14447a221e9e9205a13d84d7bbdf0636a3b1daa02cfca690ed09689c4d2b"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "bitflags 1.3.2",
  "bytemuck",
@@ -889,8 +885,7 @@ dependencies = [
 [[package]]
 name = "iced_renderer"
 version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1033385b0db0099a0d13178c9ff93c1ce11e7d0177522acf578bf79febdb2af8"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "iced_graphics",
  "iced_tiny_skia",
@@ -903,8 +898,7 @@ dependencies = [
 [[package]]
 name = "iced_runtime"
 version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c6c89853e1250c6fac82c5015fa2144517be9b33d4b8e456f10e198b23e28bd"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "iced_core",
  "iced_futures",
@@ -914,8 +908,7 @@ dependencies = [
 [[package]]
 name = "iced_style"
 version = "0.9.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d85c47d9d13e2281f75ddf98c865daf2101632bd2b855c401dd0b1c8b81a31a0"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "iced_core",
  "once_cell",
@@ -925,8 +918,7 @@ dependencies = [
 [[package]]
 name = "iced_tiny_skia"
 version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c7715f6222c9470bbbd75a39f70478fa0d1bdfb81a377a34fd1b090ffccc480b"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "bytemuck",
  "cosmic-text",
@@ -943,8 +935,7 @@ dependencies = [
 [[package]]
 name = "iced_wgpu"
 version = "0.11.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "703f7c5de46b997ed7b18e05ec67059dcdf3beeac51e917c21071b021bb848b9"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "bitflags 1.3.2",
  "bytemuck",
@@ -964,8 +955,7 @@ dependencies = [
 [[package]]
 name = "iced_widget"
 version = "0.1.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a177219ae51c3ba08f228ab932354b360cc669e94aec50c01e7c9b675f074c7c"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "iced_renderer",
  "iced_runtime",
@@ -978,8 +968,7 @@ dependencies = [
 [[package]]
 name = "iced_winit"
 version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0ecea26fcc8074373f6011d2193d63445617d900a428eb4df66c0e5658408fb6"
+source = "git+https://github.com/leoshimo/iced.git?branch=ls/setting-window-buttons#ff62455a328f99288a9f6ad2551c025b6e04494e"
 dependencies = [
  "iced_graphics",
  "iced_runtime",
@@ -2011,18 +2000,18 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "1.0.44"
+version = "1.0.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "611040a08a0439f8248d1990b111c95baa9c704c805fa1f62104b39655fd7f90"
+checksum = "d9207952ae1a003f42d3d5e892dac3c6ba42aa6ac0c79a6a91a2b5cb4253e75c"
 dependencies = [
  "thiserror-impl",
 ]
 
 [[package]]
 name = "thiserror-impl"
-version = "1.0.44"
+version = "1.0.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "090198534930841fab3a5d1bb637cde49e339654e606195f8d9c76eeb081dc96"
+checksum = "f1728216d3244de4f14f14f8c15c79be1a7c67867d28d69b719690e2a19fb445"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2725,8 +2714,7 @@ checksum = "d419259aba16b663966e29e6d7c6ecfa0bb8425818bb96f6f1f3c3eb71a6e7b9"
 [[package]]
 name = "winit"
 version = "0.28.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "866db3f712fffba75d31bf0cdecf357c8aeafd158c5b7ab51dba2a2b2d47f196"
+source = "git+https://github.com/iced-rs/winit.git?rev=c52db2045d0a2f1b8d9923870de1d4ab1994146e#c52db2045d0a2f1b8d9923870de1d4ab1994146e"
 dependencies = [
  "android-activity",
  "bitflags 1.3.2",
@@ -2759,9 +2747,9 @@ dependencies = [
 
 [[package]]
 name = "winnow"
-version = "0.5.10"
+version = "0.5.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5504cc7644f4b593cbc05c4a55bf9bd4e94b867c3c0bd440934174d50482427d"
+checksum = "83817bbecf72c73bad717ee86820ebf286203d2e04c3951f3cd538869c897364"
 dependencies = [
  "memchr",
 ]
